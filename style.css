@@ -1,0 +1,45 @@
+body{
+    font-family: sans-serif;
+}
+li{
+    list-style: none;
+}
+i, svg{
+    pointer-events: none;
+}
+li.pad{
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+}
+
+.kick > li.pad{
+    background-color:lightblue;
+}
+.snare > li.pad{
+    background:rgba(236, 187, 224, 0.4);
+}
+.hihat > li.pad{
+    background:rgba(205, 226, 166, 0.4);
+}
+
+.hihat-track, .snare-track, .kick-track{
+    display: flex;
+}
+.sequencer ul{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+}
+.sequencer select{
+    width: 5rem;
+    height: 2rem;
+    color: black;
+}
+.sequencer button{
+    width: 5rem;
+    height: 2rem;
+}
