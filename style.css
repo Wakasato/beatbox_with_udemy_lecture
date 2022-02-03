@@ -18,11 +18,20 @@ li.pad{
 .kick > li.pad{
     background-color:lightblue;
 }
+.kick > li.pad.active{
+    background-color:rgb(132, 163, 173);
+}
 .snare > li.pad{
     background:rgba(236, 187, 224, 0.4);
 }
+.snare > li.pad.active{
+    background:rgba(158, 127, 150, 0.829);
+}
 .hihat > li.pad{
     background:rgba(205, 226, 166, 0.4);
+}
+.hihat > li.pad:active{
+    background:rgba(115, 126, 96, 0.4);
 }
 
 .hihat-track, .snare-track, .kick-track{
@@ -34,6 +43,12 @@ section.sequencer{
     align-items: center;
     justify-content: center;
     min-width: 100vh;
+    max-width: 800px;
+    margin: auto;
+}
+.sequencer h2{
+  display: block;
+  width: 100px;
 }
 .sequencer ul{
     display: flex;
@@ -45,8 +60,41 @@ section.sequencer{
     width: 5rem;
     height: 2rem;
     color: black;
+
 }
 .sequencer button{
-    width: 5rem;
+    width: 2rem;
     height: 2rem;
+    color: black;
+    align-items: center;
+    border: none;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    cursor: pointer;
+    transition:  all 0.5s ease;
+}
+.pad{
+    transition:  all 0.5s ease;
+}
+.buttons{
+    max-width: 300px;
+    min-width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin: 0 2rem;
+}
+button.play{
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 5em;
+  height: 2em;
+  background-color: rgb(100, 100, 100);
+  color: white;
 }
